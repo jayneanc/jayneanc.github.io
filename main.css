@@ -306,8 +306,8 @@ body {
     text-align: right;
 }
 .progress-bar {
-    background-color: #4398BA;
-    height: 50%;
+    background-color: #4398BA !important;
+    height: 50% !important;
 }
 .prog-num {
     margin-left: 15px;
