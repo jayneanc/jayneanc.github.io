@@ -554,6 +554,7 @@ nav .contact:hover {
 }
 
 #project .card-box {
+    min-width: 166px;
     width: 10.5%;
     height: 200px;
     border-radius: 5px;
