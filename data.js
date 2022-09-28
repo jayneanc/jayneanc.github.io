@@ -41,7 +41,7 @@ const abilities = [
 const projects = [
   {
     name: "Toping.com",
-    images: ["/img/7-1.png", "/img/7-2.png"],
+    images: ["img/7-1.png", "img/7-2.png"],
     details: "Toping is an e-commerce website that delivers footwear and services.",
     types: "Design, Develop",
     tags: {
@@ -52,7 +52,7 @@ const projects = [
   },
   {
     name: "CollegeBA.com",
-    images: ["/img/3-1.jpg", "/img/3-2.jpg"],
+    images: ["img/3-1.jpg", "img/3-2.jpg"],
     details:
       "CollegeBA is a platform that gives college students a chance to sell and buy what they use in college.",
     types: "Design, Develop",
@@ -65,10 +65,10 @@ const projects = [
   {
     name: "Safetyline.com",
     images: [
-      "/img/2-1.png",
-      "/img/2-2.png",
-      "/img/2-3.png",
-      "/img/2-4.png",
+      "img/2-1.png",
+      "img/2-2.png",
+      "img/2-3.png",
+      "img/2-4.png",
     ],
     details:
       "Safetyline website is an e-commerce website that provides a huge variety of safety-related supplies.",
@@ -82,10 +82,10 @@ const projects = [
   {
     name: "Fabflix shopping website & Android App",
     images: [
-      "/img/1-1.png",
-      "/img/1-2.png",
-      "/img/1-3.png",
-      "/img/1-4.png",
+      "img/1-1.png",
+      "img/1-2.png",
+      "img/1-3.png",
+      "img/1-4.png",
     ],
     details:
       "Fablix is a mock e-commerce movie database website. Users can browse for movies, learn more details, add them into shopping cart as they want, and check out. There is also an Android app built on the website. And we apply master-slave instances technique for load balancing.",
@@ -98,7 +98,7 @@ const projects = [
   },
   {
     name: "Search Engine",
-    images: ["/img/blank.jpg"],
+    images: ["img/blank.jpg"],
     details:
       "Users type in keywords and the program will offer the most relevant results. Apply TF-IDF score ranking algorithm to find the shortest path.",
     types: "Develop",
@@ -111,10 +111,10 @@ const projects = [
   {
     name: "Computational Photography Program",
     images: [
-      "/img/5-1.jpg",
-      "/img/5-2.jpg",
-      "/img/5-3.jpg",
-      "/img/5-4.jpg",
+      "img/5-1.jpg",
+      "img/5-2.jpg",
+      "img/5-3.jpg",
+      "img/5-4.jpg",
     ],
     details:
       "Build an object detector based on gradient featurs and sliding window classification. And develop a face-swapping function to warp from one face to another using the piecewise affine warping technique",
@@ -127,7 +127,7 @@ const projects = [
   },
   {
     name: "Wumpus World AI",
-    images: ["/img/6-1.jpg"],
+    images: ["img/6-1.jpg"],
     details:
       "Wumpus World game is a gold mining game. The player plays in a random generated map that has some obstacles like Wumpus and pit. The main goal is to grab the gold and bring it back to the start point. And we apply minimax algorithm and Alpha-Beta pruning to find the shorted path.",
     types: "Develop",
