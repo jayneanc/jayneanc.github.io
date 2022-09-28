@@ -1,0 +1,738 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times';
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.h-center {
+    justify-content: center;
+}
+
+.h-between {
+    justify-content: space-between;
+}
+
+.v-center {
+    align-items: center;
+}
+
+.page {
+    background-color: var(--white2);
+    padding: 120px 0;
+}
+
+.page a {
+    color: var(--grey2);
+}
+
+/* Colors */
+:root {
+    --black1: #000000;
+    --black1-7: #00000070;
+    --black2: #575757;
+    --black2-7: #57575770;
+    --black2-4: #57575740;
+    --white1: #FFFFFF;
+    --white1-9: #FFFFFF90;
+    --white1-7: #FFFFFF70;
+    --white2: #FAFAFA;
+    --grey1: #8B8B8B;
+    --grey1-3: #8B8B8B30;
+    --grey2: #5E5E5E;
+    --grey2-6: #5E5E5E60;
+    --grey2-3: #5E5E5E30;
+    --grey3: #757575;
+    --grey4: #DCDCDC;
+    --grey5: #CECECE;
+    --green1: #77ACA2;
+    --green2: #9CC0B9;
+    --green2-7: #9CC0B970;
+    --green2-5: #9CC0B950;
+    --green2-3: #9CC0B930;
+    --green2-2: #9CC0B920;
+    --green3: #E9EFEE;
+    --blue1-4: #0D00A440;
+    --blue1-2: #0D00A420;
+    --purple1-5: #8050B650;
+    --purple1-3: #8050B630;
+}
+
+/* Titles */
+.title {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.sub-title {
+    margin-top: 15px;
+    font-size: 20px;
+    color: var(--grey2-6);
+}
+
+.title span {
+    color: var(--green1);
+}
+
+.divider {
+    width: 50px;
+    margin: 10px 0 40px 0;
+    border-bottom: 2px solid var(--grey2-3);
+}
+
+/* Card */
+.card {
+    background-color: var(--green2-3);
+    border: 2px solid var(--green3);
+    border-radius: 3px;
+    padding: 13px 8px 18px 8px;
+    box-shadow: 3px 3px 10px var(--grey2-3);
+}
+
+.card:hover {
+    border: 2px solid var(--green2-5);
+    animation: shake3 0.3s forwards;
+}
+
+/* Button */
+.btn {
+    margin-bottom: 5px;
+    padding: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn i {
+    margin-right: 5px;
+    color: var(--green2-7);
+}
+
+.btn:hover {
+    background-color: var(--green2-2) !important;
+}
+
+.btn:hover i {
+    animation: shake2 0.3s forwards;
+}
+
+/* Scroll Bar */
+::-webkit-scrollbar {
+    width: 14px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white2);
+    width: 14px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey1);
+    border-radius: 6px;
+    width: 10px;
+    border-left: 2px solid var(--white2);
+    border-right: 2px solid var(--white2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--grey3);
+}
+
+/* Nav */
+nav {
+    position: fixed;
+    background-color: var(--white1-7);
+    width: calc(100% - 60px);
+    padding: 15px 30px;
+    z-index: 2;
+}
+
+nav .nav-list {
+    overflow: hidden;
+}
+
+nav .nav-list img,
+nav .nav-list div,
+nav .nav-list a {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+nav .nav-list div {
+    margin-left: 30px;
+}
+
+nav .nav-list .main {
+    position: absolute;
+    margin: 0;
+    overflow: visible;
+}
+
+nav .nav-list .main:hover img {
+    opacity: 0.9;
+    transform: rotate(-20deg);
+}
+
+nav .nav-list div:nth-of-type(2) {
+    margin-left: 69px;
+}
+
+nav .nav-list div:nth-of-type(2) a {
+    width: 85px;
+}
+
+nav .nav-list div a {
+    width: 60px;
+}
+
+nav .nav-list div:nth-of-type(2) a:last-of-type {
+    position: relative;
+    margin-left: -85px;
+    opacity: 0;
+}
+
+nav .nav-list div a:last-of-type {
+    position: relative;
+    margin-left: -60px;
+    opacity: 0;
+}
+
+nav .nav-list div:hover a:first-of-type {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    animation: slide-down1 0.5s forwards;
+}
+
+nav .nav-list div:hover a:last-of-type {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    animation: slide-down2 0.5s forwards;
+}
+
+nav .contact {
+    color: var(--black1);
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+nav .contact:hover {
+    animation: shake1 0.3s forwards;
+}
+
+/* Scroll to top button */
+.scroll-top {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    height: 26px;
+    width: 30px;
+    color: var(--white1);
+    background-color: var(--grey1);
+    cursor: pointer;
+    z-index: 2;
+}
+
+.scroll-top:hover {
+    animation: scroll-top 0.3s ease-out forwards;
+}
+
+/* Home */
+#home {
+    height: 100vh;
+}
+
+#home:after {
+    content: "";
+    background-image: url("./img/background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#home .text {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 200px;
+}
+
+#home a {
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0.7;
+    text-shadow: 4px 4px 8px var(--grey2-3);
+}
+
+#home .name {
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#home .name span {
+    text-decoration: underline;
+    text-decoration-color: var(--green1);
+    text-decoration-thickness: 6px;
+    text-underline-offset: 10px;
+}
+
+#home .position {
+    font-size: 30px;
+}
+
+#home .button {
+    position: relative;
+    height: 41px;
+    width: 164px;
+    margin: 40px 0 0 10px;
+    color: var(--white1);
+    cursor: pointer;
+}
+
+#home .button .background {
+    position: absolute;
+    left: 0;
+    border: 2px solid var(--grey2);
+    border-radius: 5px;
+    height: 37px;
+    width: 160px;
+    z-index: -1;
+    background-color: var(--grey2);
+    box-shadow: 4px 4px 10px var(--grey2-3);
+}
+
+#home .button a {
+    position: relative;
+    border: 2px solid var(--grey1);
+    border-radius: 5px;
+    height: 37px;
+    width: 164px;
+    font-size: 14px;
+    font-weight: 500;
+    overflow: hidden;
+    opacity: 1;
+}
+
+#home .button:hover .background {
+    animation: button-slide 0.5s ease-in forwards;
+}
+
+#home .button:hover a {
+    animation: button-text 0.5s ease-in forwards;
+}
+
+/* Experiences */
+#exp .table {
+    position: relative;
+    width: 40%;
+    overflow: hidden;
+}
+
+#exp .table a {
+    color: var(--grey1);
+}
+
+#exp .table .company-list {
+    align-self: center;
+    margin-right: 20px;
+}
+
+#exp .table .company-list .btn {
+    width: 140px;
+}
+
+#exp .table .company-content {
+    width: 70%;
+    animation: slide-down3 0.5s ease-in forwards;
+}
+
+#exp .table .company-content a {
+    margin-bottom: 5px;
+    font-size: 15px;
+    opacity: 0;
+}
+
+#exp .table .company-content .position {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+#exp .table .company-content .content {
+    margin-top: 10px;
+}
+
+#exp .table .company-content .content a {
+    margin-bottom: 20px;
+    line-height: 18px;
+}
+
+#exp .table .company-content .content div i {
+    margin-right: 5px;
+    color: var(--green2);
+}
+
+/* Abilities */
+#ability .content {
+    width: 65%;
+}
+
+#ability .skills {
+    width: 100%;
+}
+
+#ability .skills .card {
+    width: 15%;
+}
+
+#ability .skills .card div {
+    background-color: var(--green2);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px var(--grey2-3);
+}
+
+#ability .skills i {
+    font-size: 30px;
+    color: var(--white1-9);
+}
+
+#ability .skills .card:nth-of-type(2) i {
+    font-size: 35px;
+    margin-bottom: -4px;
+}
+
+#ability .skills .card:nth-of-type(3) i {
+    font-size: 32px;
+    margin-bottom: -3px;
+}
+
+#ability .skills a {
+    font-size: 16px;
+    text-align: center;
+}
+
+#ability .skills a:first-of-type {
+    margin: 5px 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--grey1);
+}
+
+#ability .progress {
+    margin-top: 70px;
+    width: 65%;
+}
+
+#ability .progress a {
+    color: var(--grey1);
+}
+
+#ability .progress .list {
+    width: 20%;
+}
+
+#ability .progress .btn i {
+    font-weight: 600;
+}
+
+#ability .progress .btn a {
+    margin-left: 10px;
+    width: 100px;
+}
+
+#ability .progress .ability-content {
+    width: 70%;
+}
+
+#ability .progress .field {
+    margin-bottom: 10px;
+    transition: 0.5s ease-in;
+}
+
+#ability .progress .field:hover .progress-percent {
+    background-color: var(--green1);
+}
+
+#ability .progress .field:hover a {
+    color: var(--grey2);
+    font-weight: 600;
+}
+
+#ability .progress .field .text {
+    margin-bottom: 5px;
+}
+
+#ability .progress .field i {
+    font-size: 11px;
+    color: var(--grey1);
+}
+
+#ability .progress .field .text div a {
+    margin-right: 2px;
+}
+
+#ability .progress .progress-bar {
+    width: 100%;
+}
+
+#ability .progress .background {
+    background-color: var(--green2-3);
+    height: 8px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+#ability .progress .progress-percent {
+    background-color: var(--green2);
+    height: 8px;
+    margin-top: -8px;
+    border-radius: 3px;
+}
+
+/* Projects */
+#project .content {
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#project .card-container {
+    margin: 0 4% 100px 4%;
+    width: 15%;
+    height: 200px;
+}
+
+#project .card {
+    background-color: var(--green3);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    z-index: 2;
+    animation: none;
+}
+
+#project .card div {
+    width: 150px;
+}
+
+#project .card i {
+    margin-bottom: 10px;
+    color: var(--grey2);
+}
+
+#project .card a {
+    text-align: center;
+}
+
+#project .card a:first-of-type {
+    font-weight: 600;
+}
+
+#project .card .info {
+    margin-top: 10px;
+    font-size: 12px;
+    color: var(--grey1);
+    opacity: 0.8;
+}
+
+#project .card-box {
+    width: 10.5%;
+    height: 200px;
+    border-radius: 5px;
+    position: absolute;
+    z-index: 1;
+    transition: transform 0.2s ease-in;
+}
+
+#project .card-box div {
+    width: 80%;
+    height: 200px;
+    border-radius: 3px;
+    background-color: var(--grey1-3);
+}
+
+#project .card-container:hover .card-box {
+    transform: translateY(-20px);
+}
+
+#project .card-click {
+    animation: slide-up1 0.5s forwards;
+}
+
+#project .card-click-back {
+    animation: slide-down4 0.5s forwards;
+}
+
+#project .close {
+    animation: slide-up2 0.5s forwards !important;
+}
+
+#project .detail {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black1-7);
+    z-index: 3;
+}
+
+#project .detail-content {
+    width: 600px;
+    height: 70%;
+    border-radius: 3px;
+    background-color: var(--white2);
+    box-shadow: 5px 5px 10px var(--grey2-6);
+    z-index: 4;
+    overflow-y: scroll;
+    animation: slide-down3 0.5s forwards;
+}
+
+#project .detail-content .detail-close {
+    align-self: flex-end;
+    font-size: 24px;
+    color: var(--grey2);
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+#project .detail-content .detail-close:hover {
+    color: var(--black1);
+}
+
+#project .detail-content img {
+    width: 80%;
+    margin-left: -20px;
+    box-shadow: 3px 3px 10px var(--grey2-3);
+}
+
+#project .detail-content .detail-icon {
+    position: relative;
+    background-color: var(--grey4);
+    color: var(--black2);
+    width: 40px;
+    height: 40px;
+    margin-left: -20px;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px var(--grey2-6);
+    z-index: 5;
+    cursor: pointer;
+}
+
+#project .detail-content .detail-icon i {
+    font-size: 25px;
+    margin: 4px 0 0 7px;
+}
+
+#project .detail-content .detail-icon:first-of-type {
+    margin-left: 5px;
+}
+
+#project .detail-content .detail-icon:first-of-type i {
+    margin: 4px 0 0 -2px;
+}
+
+#project .detail-content .detail-icon:hover {
+    background-color: var(--grey5);
+}
+
+#project .detail-content .detail-icon:hover i {
+    color: var(--black1);
+}
+
+#project .detail-content .detail-pagination {
+    position: relative;
+    margin-top: 10px;
+}
+
+#project .detail-content .detail-pagination div {
+    background-color: var(--black2);
+    width: 50px;
+    height: 6px;
+    margin: 0 2px;
+    box-shadow: 3px 3px 10px var(--grey2-6);
+    cursor: pointer;
+}
+
+#project .detail-content .detail-pagination .active {
+    background-color: var(--black2-7);
+}
+
+#project .detail-content .detail-pagination div:hover {
+    background-color: var(--black2-4);
+}
+
+#project .detail-text-container {
+    margin: 30px 0 30px 0;
+    width: 80%;
+}
+
+#project .detail-text-container .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#project .detail-text-container .detail-tags {
+    flex-wrap: wrap;
+    align-self: flex-start;
+    margin-top: 30px;
+}
+
+#project .detail-text-container .detail-tags a {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 5px 10px 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: default;
+}
+
+#project .detail-text-container .detail-tags a:hover {
+    color: var(--black1);
+}
+
+#project .detail-text-container .front {
+    background-color: var(--green2-5);
+}
+
+#project .detail-text-container .front:hover {
+    background-color: var(--green2-7);
+}
+
+#project .detail-text-container .database {
+    background-color: var(--blue1-2);
+}
+
+#project .detail-text-container .database:hover {
+    background-color: var(--blue1-4);
+}
+
+#project .detail-text-container .others {
+    background-color: var(--purple1-3);
+}
+
+#project .detail-text-container .others:hover {
+    background-color: var(--purple1-5);
+}
