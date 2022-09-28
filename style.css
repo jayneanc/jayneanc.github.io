@@ -465,6 +465,7 @@ nav .contact:hover {
 #ability .progress .field {
     margin-bottom: 10px;
     transition: 0.5s ease-in;
+    cursor: default;
 }
 
 #ability .progress .field:hover .progress-percent {
