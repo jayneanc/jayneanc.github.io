@@ -624,7 +624,7 @@ nav .contact:hover {
 
 #project .detail-content img {
     width: 80%;
-    margin-left: -20px;
+    margin-left: -15px;
     box-shadow: 3px 3px 10px var(--grey2-3);
 }
 
@@ -647,7 +647,7 @@ nav .contact:hover {
 }
 
 #project .detail-content .detail-icon:first-of-type {
-    margin-left: 5px;
+    margin-left: -5px;
 }
 
 #project .detail-content .detail-icon:first-of-type i {
