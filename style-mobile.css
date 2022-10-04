@@ -212,6 +212,10 @@
         margin: 0 0 18vh 20%;
     }
 
+    #exp {
+        margin-top: -18vh;
+    }
+
     #exp .table {
         flex-direction: column;
         margin-top: -90px;
