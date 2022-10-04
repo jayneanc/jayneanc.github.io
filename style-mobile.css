@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 550px) {
     .page {
-        height: 60vh;
+        height: 30vh;
     }
 
     .title,
@@ -197,7 +197,7 @@
     }
 
     #home {
-        height: 48vh;
+        height: 24vh;
     }
 
     #home:after {
@@ -206,7 +206,7 @@
 
     #home .text {
         width: 140%;
-        margin: 0 0 45vh 20%;
+        margin: 0 0 70vh 20%;
     }
 
     #exp .table {
