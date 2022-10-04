@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 550px) {
     .page {
-        height: 60vh;
+        padding: 30px 0;
         background-color: var(--white3);
     }
 
@@ -219,6 +219,7 @@
 
     #exp {
         margin-top: -18vh;
+        height: 35vh;
     }
 
     #exp .table {
@@ -255,9 +256,14 @@
         text-align: center;
     }
 
+    #ability {
+        height: 50vh;
+    }
+
     #ability .content {
-        margin-top: -125px;
+        margin-top: -105px;
         width: 180%;
+        height: 350px;
         transform: scale(0.5);
     }
 
@@ -269,8 +275,12 @@
         width: 90%;
     }
 
+    #project {
+        height: 70vh;
+    }
+
     #project .content {
-        margin: -350px 0 0 -5%;
+        margin: -350px 0 0 0;
         width: 250%;
     }
 
@@ -290,6 +300,10 @@
     #project .card-container,
     #project .card-box {
         width: 30%;
+    }
+
+    #project .card {
+        border-radius: 25px;
     }
 
     #project .card-container:hover {
