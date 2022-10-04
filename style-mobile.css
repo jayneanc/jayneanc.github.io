@@ -280,6 +280,7 @@
 
     #project .detail-content {
         background-color: var(--white3);
+        animation: none;
     }
 
     #project .card-container:hover {
