@@ -1,4 +1,5 @@
 @media screen and (max-width: 1300px) {
+
     .title,
     .sub-title,
     .divider {
@@ -104,6 +105,7 @@
 }
 
 @media screen and (max-width: 750px) {
+
     .title,
     .divider,
     .sub-title {
@@ -171,6 +173,10 @@
 }
 
 @media screen and (max-width: 550px) {
+    .page {
+        height: 60vh;
+    }
+
     .title,
     .sub-title,
     .divider {
@@ -187,7 +193,15 @@
     }
 
     nav {
-        width: 150%;
+        width: 153%;
+    }
+
+    #home {
+        height: 48vh;
+    }
+
+    #home:after {
+        background-size: contain;
     }
 
     #home .text {

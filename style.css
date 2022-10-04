@@ -603,7 +603,7 @@ nav .contact:hover {
 
 #project .detail-content {
     width: 600px;
-    height: 70%;
+    height: 600px;
     border-radius: 3px;
     background-color: var(--white2);
     box-shadow: 5px 5px 10px var(--grey2-6);
