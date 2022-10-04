@@ -38,8 +38,8 @@
 }
 
 @media screen and (max-width: 1024px) {
-    #home {
-        height: 80vh;
+    #exp {
+       margin-top: -18vh;
     }
 }
 
