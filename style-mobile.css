@@ -197,16 +197,24 @@
     }
 
     #home {
-        height: 24vh;
+        height: 44vh;
     }
 
     #home:after {
         background-size: contain;
+        top: 28vh;
+    }
+
+    #home-before,
+    #home-after {
+        height: 28vh;
+        width: 100vw;
+        background-color: var(--white2);
     }
 
     #home .text {
         width: 140%;
-        margin: 0 0 60vh 20%;
+        margin: 0 0 18vh 20%;
     }
 
     #exp .table {
