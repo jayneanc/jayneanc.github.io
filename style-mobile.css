@@ -175,6 +175,7 @@
 @media screen and (max-width: 550px) {
     .page {
         height: 30vh;
+        background-color: var(--white3);
     }
 
     .title,
@@ -197,32 +198,18 @@
     }
 
     #home {
-        height: 44vh;
+        height: 100vh;
     }
 
     #home:after {
-        background-size: contain;
-        top: 28vh;
-    }
-
-    #home-before,
-    #home-after {
-        height: 28vh;
-        width: 100vw;
-    }
-
-    #home-before {
-        background-color: var(--white3);
-    }
-
-    #home-after {
-        margin-top: -18vh;
-        background-color: var(--white2);
+        background-image: url("./img/background-mobile.jpeg");
+        background-size: cover;
+        opacity: 0.6;
     }
 
     #home .text {
         width: 140%;
-        margin: 0 0 18vh 20%;
+        margin: 0 0 0 20%;
     }
 
     #exp .table {
@@ -241,8 +228,8 @@
     }
 
     #exp .table .company-list .company-text {
-        width: 100px;
-        padding: 15px;
+        width: 110px;
+        padding: 15px 10px;
     }
 
     #exp .table .company-list i {
@@ -273,6 +260,10 @@
         width: 90%;
     }
 
+    #project {
+        height: 60vh;
+    }
+
     #project .content {
         margin: -200px 0 0 -5%;
         width: 250%;
@@ -285,6 +276,10 @@
         left: -75vw;
         height: 250vh;
         width: 250vw;
+    }
+
+    #project .detail-content {
+        background-color: var(--white3);
     }
 
     #project .card-container:hover {
