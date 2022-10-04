@@ -209,16 +209,20 @@
     #home-after {
         height: 28vh;
         width: 100vw;
-        background-color: var(--white2);
     }
 
     #home-before {
         background-color: var(--white3);
     }
 
+    #home-after {
+        margin-top: -28vh;
+        background-color: var(--white2);
+    }
+
     #home .text {
         width: 140%;
-        margin: 0 0 0 20%;
+        margin: 0 0 18vh 20%;
     }
 
     #exp .table {
@@ -284,6 +288,6 @@
     }
 
     #project .card-container:hover {
-        transform : none;
+        transform: none;
     }
 }
