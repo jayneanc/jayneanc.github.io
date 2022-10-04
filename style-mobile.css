@@ -1,0 +1,257 @@
+@media screen and (max-width: 1300px) {
+    .title,
+    .sub-title,
+    .divider {
+        transform: scale(0.8);
+    }
+
+    .sub-title {
+        margin-top: -3px;
+    }
+
+    #home:after {
+        background-size: 100vw 100vh;
+    }
+
+    #home .text {
+        transform: scale(0.8);
+    }
+
+    #exp .table {
+        margin-top: -35px;
+        width: 60%;
+        transform: scale(0.8);
+    }
+
+    #ability .content {
+        margin-top: -55px;
+        width: 80%;
+        transform: scale(0.8);
+    }
+
+    #project .content {
+        margin-top: -55px;
+        width: 80%;
+        transform: scale(0.8);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    nav {
+        transform: scale(0.8);
+        top: -5px;
+        width: 120%;
+        margin-left: -13%;
+    }
+
+    .scroll-top {
+        transform: scale(0.8);
+        right: 10px;
+    }
+
+    .title,
+    .sub-title,
+    .divider {
+        transform: scale(0.6);
+    }
+
+    .sub-title {
+        margin-top: -10px;
+    }
+
+    .divider {
+        margin-top: 5px;
+    }
+
+    #home {
+        height: 80vh;
+    }
+
+    #home:after {
+        background-size: 100vw 80vh;
+    }
+
+    #home .text {
+        transform: scale(0.6);
+        margin-bottom: 250px;
+    }
+
+    #exp .table {
+        margin-top: -65px;
+        width: 80%;
+        transform: scale(0.6);
+    }
+
+    #ability .content {
+        margin-top: -115px;
+        width: 100%;
+        transform: scale(0.6);
+    }
+
+    #project .content {
+        margin-top: -130px;
+        width: 120%;
+        transform: scale(0.6);
+    }
+
+    #project .detail {
+        transform: scale(0.8);
+        top: -15vh;
+        left: -15vw;
+        height: 130vh;
+        width: 130vw;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .title,
+    .divider,
+    .sub-title {
+        transform: scale(0.4);
+    }
+
+    .divider {
+        margin-top: 0;
+    }
+
+    .sub-title {
+        margin-top: -15px;
+    }
+
+    nav {
+        transform: scale(0.6);
+        top: -10px;
+        width: 160%;
+        margin-left: -34%;
+    }
+
+    .scroll-top {
+        transform: scale(0.6);
+        right: 5px;
+    }
+
+    #home {
+        height: 60vh;
+    }
+
+    #home:after {
+        background-size: 100vw 60vh;
+    }
+
+    #home .text {
+        transform: scale(0.4);
+        margin-bottom: 370px;
+    }
+
+    #exp .table {
+        margin-top: -95px;
+        width: 120%;
+        transform: scale(0.4);
+    }
+
+    #ability .content {
+        margin-top: -55px;
+        width: 120%;
+        transform: scale(0.4);
+    }
+
+    #project .content {
+        margin-top: -55px;
+        width: 140%;
+        transform: scale(0.4);
+    }
+
+    #project .detail {
+        transform: scale(0.6);
+        top: -35vh;
+        left: -35vw;
+        height: 170vh;
+        width: 170vw;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .title,
+    .sub-title,
+    .divider {
+        transform: scale(0.6);
+    }
+
+    .sub-title {
+        margin-top: -10px;
+        text-align: center;
+    }
+
+    .divider {
+        margin-top: 5px;
+    }
+
+    nav {
+        width: 150%;
+    }
+
+    #home .text {
+        width: 140%;
+        margin: 0 0 45vh 20%;
+    }
+
+    #exp .table {
+        flex-direction: column;
+        margin-top: -90px;
+        width: 145%;
+        transform: scale(0.6);
+        overflow: visible;
+    }
+
+    #exp .table .company-list {
+        flex-direction: row;
+        margin: 0 0 15px 0;
+    }
+
+    #exp .table .company-list .company-text {
+        width: 100px;
+        padding: 15px 5px;
+    }
+
+    #exp .table .company-list i {
+        margin-right: 3px;
+    }
+
+    #exp .table .company-content {
+        width: 100%;
+        height: 280px;
+    }
+
+    #exp .table .company-content .position,
+    #exp .table .company-content .duration {
+        text-align: center;
+    }
+
+    #ability .content {
+        margin-top: -125px;
+        width: 180%;
+        transform: scale(0.5);
+    }
+
+    #ability .content .skills a:last-of-type {
+        display: none;
+    }
+
+    #ability .content .progress {
+        width: 90%;
+    }
+
+    #project .content {
+        margin: -200px 0 0 -5%;
+        width: 250%;
+        transform: scale(0.4);
+    }
+
+    #project .detail {
+        transform: scale(0.4);
+        top: -75vh;
+        left: -75vw;
+        height: 250vh;
+        width: 250vw;
+    }
+}
