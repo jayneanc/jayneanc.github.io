@@ -212,6 +212,10 @@
         background-color: var(--white2);
     }
 
+    #home-before {
+        background-color: var(--white3);
+    }
+
     #home .text {
         width: 140%;
         margin: 0 0 18vh 20%;
