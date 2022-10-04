@@ -219,12 +219,14 @@
 
     #exp .table .company-list {
         flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
         margin: 0 0 15px 0;
     }
 
     #exp .table .company-list .company-text {
         width: 100px;
-        padding: 15px 5px;
+        padding: 15px;
     }
 
     #exp .table .company-list i {
