@@ -197,6 +197,11 @@
         width: 153%;
     }
 
+    .scroll-top {
+        transform: scale(0.8);
+        right: 10px;
+    }
+
     #home {
         height: 100vh;
     }
@@ -265,9 +270,8 @@
     }
 
     #project .content {
-        margin: -200px 0 0 -5%;
+        margin: -350px 0 0 -5%;
         width: 250%;
-        transform: scale(0.4);
     }
 
     #project .detail {
@@ -281,6 +285,11 @@
     #project .detail-content {
         background-color: var(--white3);
         animation: none;
+    }
+
+    #project .card-container,
+    #project .card-box {
+        width: 30%;
     }
 
     #project .card-container:hover {
