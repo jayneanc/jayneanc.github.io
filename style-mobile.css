@@ -37,6 +37,12 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    #home {
+        height: 90vh;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     nav {
         transform: scale(0.8);
