@@ -207,7 +207,7 @@
     }
 
     #home:after {
-        background-image: url("./img/background-mobile.jpeg");
+        background-image: url("./img/background-mobile.jpg");
         background-size: cover;
         opacity: 0.6;
     }
