@@ -174,7 +174,7 @@
 
 @media screen and (max-width: 550px) {
     .page {
-        height: 30vh;
+        height: 60vh;
         background-color: var(--white3);
     }
 
@@ -258,10 +258,6 @@
 
     #ability .content .progress {
         width: 90%;
-    }
-
-    #project {
-        height: 40vh;
     }
 
     #project .content {
