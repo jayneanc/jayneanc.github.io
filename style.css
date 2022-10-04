@@ -340,6 +340,10 @@ nav .contact:hover {
 }
 
 /* Experiences */
+#exp {
+    margin-top: -18vh;
+}
+
 #exp .table {
     position: relative;
     width: 40%;
