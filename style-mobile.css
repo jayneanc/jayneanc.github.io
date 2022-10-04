@@ -268,4 +268,8 @@
         height: 250vh;
         width: 250vw;
     }
+
+    #project .card-container:hover {
+        transform : none;
+    }
 }
