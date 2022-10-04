@@ -303,11 +303,19 @@
         width: 30%;
     }
 
-    #project .card {
-        border-radius: 25px;
-    }
-
     #project .card-container:hover {
         transform: none;
+    }
+
+    #project .card div {
+        width: 200px;
+    }
+
+    #project .card a {
+        font-size: 24px;
+    }
+
+    #project .card .info {
+        font-size: 20px;
     }
 }
