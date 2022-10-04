@@ -213,8 +213,9 @@
     }
 
     #home .text {
+        transform: scale(0.6);
         width: 140%;
-        margin: 0 0 10vh 20%;
+        margin: 0 0 10vh 8%;
     }
 
     #exp {
