@@ -145,6 +145,10 @@
         margin-bottom: 370px;
     }
 
+    #exp {
+        margin-top: -18vh;
+    }
+
     #exp .table {
         margin-top: -95px;
         width: 120%;
@@ -210,10 +214,6 @@
     #home .text {
         width: 140%;
         margin: 0 0 18vh 20%;
-    }
-
-    #exp {
-        margin-top: -18vh;
     }
 
     #exp .table {
