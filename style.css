@@ -402,6 +402,11 @@ nav .contact:hover {
 #exp .hash-tags a {
     margin-right: 20px;
     color: var(--green1-97);
+    cursor: default
+}
+
+#exp .hash-tags a:hover {
+    color: var(--green2);
 }
 
 #exp .hash-tags span {
