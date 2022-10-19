@@ -52,12 +52,14 @@ body {
     --grey1: #8B8B8B;
     --grey1-3: #8B8B8B30;
     --grey2: #5E5E5E;
+    --grey2-8: #5E5E5E80;
     --grey2-6: #5E5E5E60;
     --grey2-3: #5E5E5E30;
     --grey3: #757575;
     --grey4: #DCDCDC;
     --grey5: #CECECE;
     --green1: #77ACA2;
+    --green1-97: #77ACA297;
     --green2: #9CC0B9;
     --green2-7: #9CC0B970;
     --green2-5: #9CC0B950;
@@ -393,6 +395,19 @@ nav .contact:hover {
     color: var(--green2);
 }
 
+#exp .hash-tags {
+    flex-wrap: wrap;
+}
+
+#exp .hash-tags a {
+    margin-right: 20px;
+    color: var(--green1-97);
+}
+
+#exp .hash-tags span {
+    text-decoration: underline;
+}
+
 /* Abilities */
 #ability .content {
     width: 65%;
@@ -696,9 +711,24 @@ nav .contact:hover {
 }
 
 #project .detail-text-container .title {
-    font-size: 20px;
     margin-bottom: 20px;
     text-align: center;
+    align-items: baseline;
+}
+
+#project .detail-text-container .title a {
+    font-size: 20px;
+}
+
+#project .detail-text-container .title i {
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: var(--green1);
+}
+
+#project .detail-text-container .title i:hover {
+    color: var(--green2);
 }
 
 #project .detail-text-container .detail-tags {

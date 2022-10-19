@@ -181,7 +181,7 @@ function getProjectDetail() {
   const project = document.getElementById("project");
 
   for (let i = 0; i < projects.length; i++) {
-    const { name, images, details, tags } = projects[i];
+    const { name, images, details, link, tags } = projects[i];
 
     // Elements
     const detail = document.createElement("div");
@@ -196,7 +196,9 @@ function getProjectDetail() {
     const carouselIconRight = document.createElement("i");
     const pagination = document.createElement("div");
     const textContainer = document.createElement("div");
+    const titleContainer = document.createElement("div");
     const textTitle = document.createElement("a");
+    const linkImg = document.createElement("i");
     const textDetail = document.createElement("a");
     const textTags = document.createElement("div");
     project.appendChild(detail);
@@ -211,9 +213,13 @@ function getProjectDetail() {
     carouselContent.appendChild(carouselIconRightDiv);
     carouselIconLeftDiv.appendChild(carouselIconLeft);
     carouselIconRightDiv.appendChild(carouselIconRight);
-    textContainer.appendChild(textTitle);
+    textContainer.appendChild(titleContainer);
     textContainer.appendChild(textDetail);
     textContainer.appendChild(textTags);
+    titleContainer.appendChild(textTitle);
+    if (link) {
+      titleContainer.appendChild(linkImg);
+    }
 
     // Implement # of pages for carousel images
     for (let j = 0; j < images.length; j++) {
@@ -248,11 +254,19 @@ function getProjectDetail() {
     carouselIconRight.className = "fa fa-chevron-right";
     pagination.className = "flex h-center detail-pagination";
     textContainer.className = "flex-column v-center detail-text-container";
-    textTitle.className = "title";
+    titleContainer.className = "flex title";
+    linkImg.className = "fa fa-external-link";
     textTags.className = "flex detail-tags";
 
     // Image
     carouselImg.src = images[0];
+
+    // Link
+    if (link) {
+      linkImg.onclick = () => {
+        window.open(link, "_blank");
+      };
+    }
 
     // Texts
     textTitle.innerHTML = name;
@@ -264,10 +278,10 @@ function getProjectDetail() {
       const project = document.getElementById("project");
       const cardBox = project.getElementsByClassName("card-box")[i];
 
-      detailContent.classList.add("close")
+      detailContent.classList.add("close");
       setTimeout(() => {
         toggleProjectDetail(false, detail);
-        detailContent.classList.remove("close")
+        detailContent.classList.remove("close");
         cardBox.classList.add("card-click-back");
       }, 500);
       setTimeout(() => {
@@ -322,11 +336,22 @@ function getCarouselImage(pagination, element, images, index) {
 function animateShowText() {
   const page = document.getElementById("exp");
   const content = page.getElementsByClassName("company-content");
+  const hashTags = page.getElementsByClassName("hash-tags");
 
   for (let i = 0; i < content.length; i++) {
+    let k = 0,
+      lastIdx = 0;
     const texts = content[i].getElementsByTagName("a");
+    const tagTexts = hashTags[i].getElementsByTagName("a");
+
     for (let j = 0; j < texts.length; j++) {
-      texts[j].style.animation = `show 0.2s ${0.2 * (j + 1)}s forwards`;
+      if (tagTexts.length > 0 && texts[j] == tagTexts[k]) {
+        texts[j].style.animation = `show 0.2s ${0.2 * (lastIdx + 1)}s forwards`;
+        k++;
+      } else {
+        texts[j].style.animation = `show 0.2s ${0.2 * (j + 1)}s forwards`;
+        lastIdx++;
+      }
     }
   }
 }
