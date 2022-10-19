@@ -281,7 +281,7 @@
     }
 
     #project .content {
-        margin: -350px 0 0 0;
+        margin: -450px 0 0 0;
         width: 250%;
     }
 
@@ -289,7 +289,7 @@
         transform: scale(0.4);
         top: -75vh;
         left: -75vw;
-        height: 250vh;
+        height: 300vh;
         width: 250vw;
     }
 
